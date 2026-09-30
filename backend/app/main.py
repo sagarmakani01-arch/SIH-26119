@@ -1,3 +1,4 @@
+import os
 from typing import Any, Dict
 
 from fastapi import FastAPI, HTTPException
@@ -34,9 +35,15 @@ app = FastAPI(
     ),
 )
 
+ALLOWED_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get("ALLOWED_ORIGINS", "*").split(",")
+    if origin.strip()
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
