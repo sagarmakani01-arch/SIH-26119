@@ -1,0 +1,22 @@
+# Build outputs
+build/
+dist/
+tests_out.txt
+*.log
+
+# Dependencies / tooling
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+.env.*

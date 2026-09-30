@@ -1,0 +1,9 @@
+build/
+.git/
+docs/
+datasets/
+scripts/
+**/__pycache__/
+*.log
+frontend/node_modules/
+frontend/dist/

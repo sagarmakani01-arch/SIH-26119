@@ -1,0 +1,23 @@
+services:
+  solver-backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: sovereign-solver-backend:latest
+    container_name: solver-backend
+    environment:
+      SOLVER_CLI_PATH: /usr/local/bin/solver_cli
+      SOLVE_TIMEOUT_SEC: "120"
+    restart: unless-stopped
+
+  solver-frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    image: sovereign-solver-frontend:latest
+    container_name: solver-frontend
+    ports:
+      - "8000:80"
+    depends_on:
+      - solver-backend
+    restart: unless-stopped
