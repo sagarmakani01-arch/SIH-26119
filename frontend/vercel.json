@@ -19,6 +19,10 @@
     {
       "source": "/redoc",
       "destination": "https://sih-26119.onrender.com/redoc"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
