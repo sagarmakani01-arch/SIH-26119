@@ -9,7 +9,7 @@ const stages = [
 export function PipelineViz() {
   return (
     <div className="panel relative overflow-hidden px-5 py-6 sm:px-8 sm:py-7">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(600px_200px_at_50%_0%,rgba(45,212,191,0.09),transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(600px_200px_at_50%_0%,rgba(15,118,110,0.06),transparent_70%)]" />
       <div className="relative flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
         {stages.map((stage, i) => (
           <div key={stage.label} className="flex flex-1 items-center">

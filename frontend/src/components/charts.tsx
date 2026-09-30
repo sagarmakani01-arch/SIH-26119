@@ -12,17 +12,17 @@ import {
 } from "recharts";
 import type { SolveResult, SolverModel } from "../services/api/types";
 
-const AXIS = "#8f86c9";
-const GRID = "#3a3578";
-const TEAL = "#2dd4bf";
-const ORCHID = "#c084fc";
+const AXIS = "#6d679b";
+const GRID = "#e3e6f3";
+const TEAL = "#0d9488";
+const ORCHID = "#9333ea";
 
 const tooltipStyle = {
-  background: "#232052",
-  border: "1px solid #4c4694",
+  background: "#ffffff",
+  border: "1px solid #d7dcec",
   borderRadius: "10px",
   fontSize: 12,
-  color: "#f2eeff",
+  color: "#191640",
 };
 
 export function AllocationChart({ model, result }: { model: SolverModel; result: SolveResult }) {
@@ -37,7 +37,7 @@ export function AllocationChart({ model, result }: { model: SolverModel; result:
           <CartesianGrid stroke={GRID} strokeDasharray="3 3" vertical={false} />
           <XAxis dataKey="name" tick={{ fill: AXIS, fontSize: 11 }} tickLine={false} axisLine={false} />
           <YAxis tick={{ fill: AXIS, fontSize: 11 }} tickLine={false} axisLine={false} />
-          <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(45, 212, 191, 0.08)" }} />
+          <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(15, 118, 110, 0.08)" }} />
           <Bar dataKey="value" name="Value" radius={[6, 6, 0, 0]}>
             {data.map((_, i) => (
               <Cell key={i} fill={i % 2 === 0 ? TEAL : ORCHID} />
@@ -86,14 +86,14 @@ export function UtilizationChart({
             tickLine={false}
             axisLine={false}
           />
-          <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(45, 212, 191, 0.08)" }} />
-          <ReferenceLine x={100} stroke="#fbbf24" strokeDasharray="4 4" />
+          <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(15, 118, 110, 0.08)" }} />
+          <ReferenceLine x={100} stroke="#b45309" strokeDasharray="4 4" />
           <Bar dataKey="utilization" name="Utilization" radius={[0, 6, 6, 0]}>
             {data.map((d, i) => (
               <Cell
                 key={i}
                 fill={
-                  d.utilization > 99.5 ? "#34d399" : d.utilization > 80 ? TEAL : "#4c4694"
+                  d.utilization > 99.5 ? "#059669" : d.utilization > 80 ? TEAL : "#c4cae0"
                 }
               />
             ))}
@@ -117,7 +117,7 @@ export function ScenarioChart({ data, sense }: { data: ScenarioPoint[]; sense: s
           <CartesianGrid stroke={GRID} strokeDasharray="3 3" vertical={false} />
           <XAxis dataKey="name" tick={{ fill: AXIS, fontSize: 11 }} tickLine={false} axisLine={false} />
           <YAxis tick={{ fill: AXIS, fontSize: 11 }} tickLine={false} axisLine={false} />
-          <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(45, 212, 191, 0.08)" }} />
+          <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(15, 118, 110, 0.08)" }} />
           <Legend wrapperStyle={{ fontSize: 11, color: AXIS }} />
           <Bar dataKey="objective" name={`Objective (${sense})`} radius={[6, 6, 0, 0]}>
             {data.map((_, i) => (

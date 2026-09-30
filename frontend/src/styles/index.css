@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #17143a;
-  --color-bg-2: #1d1947;
-  --color-panel: #232052;
-  --color-panel-2: #2b2761;
-  --color-line: #3a3578;
-  --color-line-2: #4c4694;
-  --color-ink: #f2eeff;
-  --color-ink-2: #c3baef;
-  --color-ink-3: #8f86c9;
-  --color-accent: #2dd4bf;
-  --color-accent-2: #c084fc;
-  --color-good: #34d399;
-  --color-warn: #fbbf24;
-  --color-bad: #fb7185;
+  --color-bg: #f4f5fb;
+  --color-bg-2: #eaecf7;
+  --color-panel: #ffffff;
+  --color-panel-2: #f7f8fd;
+  --color-line: #dfe3f0;
+  --color-line-2: #c4cae0;
+  --color-ink: #191640;
+  --color-ink-2: #4b4677;
+  --color-ink-3: #77719e;
+  --color-accent: #0f766e;
+  --color-accent-2: #7e22ce;
+  --color-good: #047857;
+  --color-warn: #b45309;
+  --color-bad: #be123c;
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
@@ -27,13 +27,13 @@
   body {
     @apply bg-bg text-ink font-sans antialiased;
     background-image:
-      radial-gradient(1100px 550px at 82% -10%, rgba(192, 132, 252, 0.22), transparent 60%),
-      radial-gradient(950px 480px at 3% 4%, rgba(45, 212, 191, 0.16), transparent 55%),
-      radial-gradient(1300px 700px at 50% 118%, rgba(99, 102, 241, 0.24), transparent 65%);
+      radial-gradient(1100px 550px at 82% -10%, rgba(168, 85, 247, 0.10), transparent 60%),
+      radial-gradient(950px 480px at 3% 4%, rgba(20, 184, 166, 0.10), transparent 55%),
+      radial-gradient(1300px 700px at 50% 118%, rgba(99, 102, 241, 0.12), transparent 65%);
     background-attachment: fixed;
   }
   ::selection {
-    background: rgba(45, 212, 191, 0.32);
+    background: rgba(15, 118, 110, 0.25);
   }
   ::-webkit-scrollbar {
     width: 10px;
@@ -62,7 +62,7 @@
     @apply font-mono tabular-nums;
   }
   .glow-accent {
-    box-shadow: 0 0 44px rgba(45, 212, 191, 0.18);
+    box-shadow: 0 0 44px rgba(15, 118, 110, 0.16);
   }
   .focus-ring {
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60;

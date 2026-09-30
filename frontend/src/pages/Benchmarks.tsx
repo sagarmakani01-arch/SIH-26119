@@ -275,20 +275,20 @@ export default function Benchmarks() {
                       data={run.rows.map((r) => ({ name: r.name.slice(0, 22), ms: Math.round(r.wallMs) }))}
                       margin={{ top: 8, right: 12, left: -8, bottom: 4 }}
                     >
-                      <CartesianGrid stroke="#3a3578" strokeDasharray="3 3" vertical={false} />
-                      <XAxis dataKey="name" tick={{ fill: "#8f86c9", fontSize: 10 }} tickLine={false} axisLine={false} />
-                      <YAxis tick={{ fill: "#8f86c9", fontSize: 11 }} tickLine={false} axisLine={false} />
+                      <CartesianGrid stroke="#e3e6f3" strokeDasharray="3 3" vertical={false} />
+                      <XAxis dataKey="name" tick={{ fill: "#6d679b", fontSize: 10 }} tickLine={false} axisLine={false} />
+                      <YAxis tick={{ fill: "#6d679b", fontSize: 11 }} tickLine={false} axisLine={false} />
                       <Tooltip
                         contentStyle={{
-                          background: "#232052",
-                          border: "1px solid #4c4694",
+                          background: "#ffffff",
+                          border: "1px solid #d7dcec",
                           borderRadius: "10px",
                           fontSize: 12,
                         }}
                       />
                       <Bar dataKey="ms" name="ms" radius={[6, 6, 0, 0]}>
                         {run.rows.map((_, i) => (
-                          <Cell key={i} fill={i % 2 === 0 ? "#2dd4bf" : "#c084fc"} />
+                          <Cell key={i} fill={i % 2 === 0 ? "#0d9488" : "#9333ea"} />
                         ))}
                       </Bar>
                     </BarChart>
