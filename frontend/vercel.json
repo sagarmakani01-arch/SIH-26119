@@ -2,23 +2,23 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://YOUR-BACKEND-URL.onrender.com/api/:path*"
+      "destination": "https://sih-26119.onrender.com/api/:path*"
     },
     {
       "source": "/docs",
-      "destination": "https://YOUR-BACKEND-URL.onrender.com/docs"
+      "destination": "https://sih-26119.onrender.com/docs"
     },
     {
       "source": "/docs/:path*",
-      "destination": "https://YOUR-BACKEND-URL.onrender.com/docs/:path*"
+      "destination": "https://sih-26119.onrender.com/docs/:path*"
     },
     {
       "source": "/openapi.json",
-      "destination": "https://YOUR-BACKEND-URL.onrender.com/openapi.json"
+      "destination": "https://sih-26119.onrender.com/openapi.json"
     },
     {
       "source": "/redoc",
-      "destination": "https://YOUR-BACKEND-URL.onrender.com/redoc"
+      "destination": "https://sih-26119.onrender.com/redoc"
     }
   ]
 }
