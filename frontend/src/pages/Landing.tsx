@@ -83,7 +83,7 @@ export default function Landing() {
             </div>
             <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem]">
               Optimize critical decisions,{" "}
-              <span className="bg-gradient-to-r from-accent via-[#7dd3fc] to-accent-2 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-transparent">
                 compute optimal solutions.
               </span>
             </h1>

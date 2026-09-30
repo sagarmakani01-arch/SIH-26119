@@ -136,7 +136,7 @@ export default function Explain() {
           <ul className="mt-4 space-y-3">
             {interpretation.map((s, i) => (
               <li key={i} className="flex gap-3 text-[13px] leading-relaxed text-ink-2">
-                <Info size={15} className="mt-0.5 shrink-0 text-[#c4b5fd]" />
+                <Info size={15} className="mt-0.5 shrink-0 text-[#d8b4fe]" />
                 <span>{s}</span>
               </li>
             ))}

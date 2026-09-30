@@ -15,7 +15,7 @@ export function Button({
     "focus-ring inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all duration-150 disabled:cursor-not-allowed disabled:opacity-45";
   const variants: Record<string, string> = {
     primary:
-      "bg-accent text-[#04222b] hover:bg-[#5ee3f7] shadow-[0_6px_24px_rgba(34,211,238,0.25)]",
+      "bg-accent text-[#042f2e] hover:bg-[#5eead4] shadow-[0_6px_24px_rgba(45,212,191,0.30)]",
     secondary: "bg-panel-2 border border-line-2 text-ink hover:border-accent/50 hover:text-accent",
     ghost: "text-ink-2 hover:text-ink hover:bg-panel-2/70",
     danger: "bg-panel-2 border border-bad/40 text-bad hover:bg-bad/10",
@@ -33,7 +33,7 @@ export function Badge({ tone = "neutral", children }: { tone?: Tone; children: R
     good: "bg-good/12 text-good border-good/35",
     warn: "bg-warn/12 text-warn border-warn/35",
     bad: "bg-bad/12 text-bad border-bad/35",
-    violet: "bg-accent-2/15 text-[#c4b5fd] border-accent-2/40",
+    violet: "bg-accent-2/15 text-[#d8b4fe] border-accent-2/40",
     neutral: "bg-panel-2 text-ink-2 border-line-2",
   };
   return (
@@ -76,7 +76,7 @@ export function Stat({
           : tone === "accent"
             ? "text-accent"
             : tone === "violet"
-              ? "text-[#c4b5fd]"
+              ? "text-[#d8b4fe]"
               : "text-ink";
   return (
     <div className="panel-soft px-4 py-3">

@@ -193,7 +193,7 @@ export default function Documentation() {
 
       <div className="mt-5 flex flex-wrap gap-3">
         <a href="/docs" target="_blank" rel="noreferrer">
-          <button className="focus-ring inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-[#04222b] transition-colors hover:bg-[#5ee3f7]">
+          <button className="focus-ring inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-[#042f2e] transition-colors hover:bg-[#5eead4]">
             Open Swagger UI <ExternalLink size={15} />
           </button>
         </a>

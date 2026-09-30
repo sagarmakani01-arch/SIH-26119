@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #060912;
-  --color-bg-2: #090e1c;
-  --color-panel: #0c1322;
-  --color-panel-2: #101a2f;
-  --color-line: #1c2942;
-  --color-line-2: #27395c;
-  --color-ink: #e6edf7;
-  --color-ink-2: #9db0cd;
-  --color-ink-3: #64769a;
-  --color-accent: #22d3ee;
-  --color-accent-2: #8b5cf6;
+  --color-bg: #17143a;
+  --color-bg-2: #1d1947;
+  --color-panel: #232052;
+  --color-panel-2: #2b2761;
+  --color-line: #3a3578;
+  --color-line-2: #4c4694;
+  --color-ink: #f2eeff;
+  --color-ink-2: #c3baef;
+  --color-ink-3: #8f86c9;
+  --color-accent: #2dd4bf;
+  --color-accent-2: #c084fc;
   --color-good: #34d399;
   --color-warn: #fbbf24;
-  --color-bad: #f87171;
+  --color-bad: #fb7185;
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
@@ -27,12 +27,13 @@
   body {
     @apply bg-bg text-ink font-sans antialiased;
     background-image:
-      radial-gradient(1100px 500px at 75% -10%, rgba(139, 92, 246, 0.13), transparent 60%),
-      radial-gradient(900px 420px at 10% 0%, rgba(34, 211, 238, 0.1), transparent 55%);
+      radial-gradient(1100px 550px at 82% -10%, rgba(192, 132, 252, 0.22), transparent 60%),
+      radial-gradient(950px 480px at 3% 4%, rgba(45, 212, 191, 0.16), transparent 55%),
+      radial-gradient(1300px 700px at 50% 118%, rgba(99, 102, 241, 0.24), transparent 65%);
     background-attachment: fixed;
   }
   ::selection {
-    background: rgba(34, 211, 238, 0.28);
+    background: rgba(45, 212, 191, 0.32);
   }
   ::-webkit-scrollbar {
     width: 10px;
@@ -61,7 +62,7 @@
     @apply font-mono tabular-nums;
   }
   .glow-accent {
-    box-shadow: 0 0 44px rgba(34, 211, 238, 0.16);
+    box-shadow: 0 0 44px rgba(45, 212, 191, 0.18);
   }
   .focus-ring {
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60;
